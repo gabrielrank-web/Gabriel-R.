@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      width: 350px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .foto {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #4CAF50;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    h2 {
+      color: #4CAF50;
+      margin-top: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #e8f5e9;
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    #mensagem {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <img style= height=200px, width=200px'"display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://mail.google.com/mail/u/0/?ui=2&amp;ik=d94b9d4f76&amp;attid=0.1&amp;permmsgid=msg-f:1866261524000628717&amp;th=19e64af7dc095fed&amp;view=fimg&amp;realattid=19e64af36f2b613a2e31&amp;disp=thd&amp;attbid=ANGjdJ8SAs8NMrjceSRkkD8I44smjnCAckJo4CsVlwejgLcaPs2oStkKBgjiPWaCYaFQPVunyPzTeH0KM8s2sdVWPwitCL5UMLWFFG40AxhT9S5c6K-m9XMU3sTu0zU&amp;ats=2524608000000&amp;sz=w1366-h633&amp;auditContext=forDisplay">
+
+    <h1> Gabriel Rank</h1>
+
+    <h2>Hobbies</h2>
+    <ul>
+      <li>🎮 Jogos</li>
+      <li>🎵 Música</li>
+      <li>⚽ Corrida </li>
+    </ul>
+
+    <h2>Música Favorita</h2>
+    <p>🎧 Uptown Funk - Bruno Mars</p>
+
+    <!-- BOTÃO INTERATIVO -->
+    <button onclick="mostrarMensagem()">Clique aqui</button>
+
+    <p id="mensagem"></p>
+
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").innerHTML =
+        "✨ Obrigado por visitar minha página! ✨";
+    }
+  </script>
+
+</body>
+</html>
